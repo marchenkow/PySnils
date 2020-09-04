@@ -76,8 +76,16 @@ def check_snils(data):
 
 
 print(check_snils(snils1))
+# True
+
 print(check_snils(snils2))
+# True
 
 for i in snils3:
     if check_snils(i) != True:
         print(check_snils(i))
+# Неверный СНИЛС
+# Неверный СНИЛС
+# Неверное количество символов в СНИЛС - <12/11>
+# СНИЛС: 24726179O83 - В СНИЛС содержатся посторонние символы - <isdigit(False)>
+# СНИЛС: ['40195442558', '70545709698', '58417911825'] - Неверный тип данных - <class 'list'>
